@@ -1,13 +1,23 @@
-# ElixirComDb
+# Elixir Com Postgresql
 
-To start your Phoenix server:
+## Iniciar o servidor Phoenix localmente:
 
   * Run `mix setup` to install and setup dependencies
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Iniciar o servidor Phoenix com o Docker
+Cria e inicia o container docker com o banco de dados e o servidor Phoenix
+ ```
+docker-compose up --build -d
+ ```
+Quando finalizar a criação do container já pode acessar o site [`localhost:8000`](http://localhost:8000) no seu navegador
+
+Parar o container executa o seguinte comando:
+```
+docker-compose down
+```
 
 ## Learn more
 
