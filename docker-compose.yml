@@ -6,3 +6,10 @@ services:
     command: /bin/sh docker_dev_start.sh
     ports:
       - 8000:4000
+  db: 
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - "5432:5432"

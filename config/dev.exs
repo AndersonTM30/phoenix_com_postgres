@@ -4,7 +4,7 @@ import Config
 config :elixir_com_db, ElixirComDb.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
+  hostname: "db",
   database: "elixir_com_db_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
