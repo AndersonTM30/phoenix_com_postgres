@@ -6,6 +6,10 @@ services:
     command: /bin/sh docker_dev_start.sh
     ports:
       - 8000:4000
+    depends_on:
+      - db
+    links:
+      - db
   db: 
     image: postgres
     environment:
